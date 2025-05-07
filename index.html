@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Deliciosas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Receitas Deliciosas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#receitas">Receitas</a></li>
+                    <li><a href="#adicionar">Adicionar Receita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="receitas" class="section">
+        <div class="container">
+            <h2>Minhas Receitas Favoritas</h2>
+
+            <div class="receita">
+                <img src="bolo.jpg" alt="Bolo de Chocolate" class="receita-imagem">
+                <h3>Receita 1: Bolo de Chocolate</h3><br>
+                <p>Uma deliciosa receita de bolo de chocolate para sua sobremesa. Perfeita para qualquer ocasião.</p>
+            </div>
+
+            <div class="receita">
+                <img src="macarrao.jfif" alt="Macarrão à Carbonara" class="receita-imagem">
+                <h3>Receita 2: Macarrão à Carbonara</h3><br>
+                <p>Receita tradicional italiana de macarrão à carbonara, com um molho cremoso e delicioso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="adicionar" class="section">
+        <div class="container">
+            <h2>Adicionar Nova Receita</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome da Receita:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="ingredientes">Ingredientes:</label>
+                <textarea id="ingredientes" name="ingredientes" rows="4" required></textarea>
+
+                <label for="modo-preparo">Modo de Preparo:</label>
+                <textarea id="modo-preparo" name="modo-preparo" rows="4" required></textarea>
+
+                <button type="submit">Adicionar Receita</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Receitas Deliciosas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
