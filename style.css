@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+body.estilo-senhora {
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  background-color: #fdfaf6;
+  color: #4b2e2e;
 }
 
 header {
-  background-color: #333;
+  background-color: #8b5e3c;
   color: #fff;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 
 header .container {
@@ -26,7 +26,8 @@ header .container {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 nav ul {
@@ -41,11 +42,12 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 section {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .container {
@@ -55,78 +57,94 @@ section {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #d6bfa9;
+  padding-bottom: 0.5rem;
 }
 
 .receita {
-  background-color: #fff;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fffdf9;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
   display: flex;
-  flex-wrap: wrap;
+  gap: 1.5rem;
   align-items: center;
 }
 
 .receita-imagem {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
-  margin-right: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 2px solid #e4d3c3;
 }
 
-.receita h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.receita-conteudo h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #6a4e3d;
 }
 
-.receita p {
-  font-size: 1rem;
-  color: #666;
+.receita-conteudo p {
+  font-size: 1.05rem;
+  color: #5b4538;
+}
+
+footer {
+  background-color: #8b5e3c;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.95rem;
 }
 
 form {
-  background-color: #fff;
+  background-color: #fffdf9;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 form label {
   display: block;
-  margin: 0.5rem 0;
+  margin: 1rem 0 0.3rem;
   font-size: 1rem;
+  color: #4b2e2e;
 }
 
 form input,
 form textarea {
   width: 100%;
   padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid #e4d3c3;
+  border-radius: 6px;
   font-size: 1rem;
+  background-color: #fffaf4;
 }
 
 form button {
-  background-color: #333;
+  background-color: #8b5e3c;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #444;
+  background-color: #a06e4b;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
+/* Suavidade ao rolar a página */
+html {
+  scroll-behavior: smooth;
 }
+
+

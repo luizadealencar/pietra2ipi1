@@ -6,7 +6,7 @@
     <title>Receitas Deliciosas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="estilo-senhora">
     <header>
         <div class="container">
             <h1>Receitas Deliciosas</h1>
@@ -14,7 +14,6 @@
                 <ul>
                     <li><a href="#">Início</a></li>
                     <li><a href="#receitas">Receitas</a></li>
-                    <li><a href="#adicionar">Adicionar Receita</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,36 +25,41 @@
 
             <div class="receita">
                 <img src="bolo.jpg" alt="Bolo de Chocolate" class="receita-imagem">
-                <h3>Receita 1: Bolo de Chocolate</h3><br>
-                <p>Uma deliciosa receita de bolo de chocolate para sua sobremesa. Perfeita para qualquer ocasião.</p>
+                <div class="receita-conteudo">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Uma deliciosa receita de bolo de chocolate para sua sobremesa. Perfeita para qualquer ocasião.</p>
+                </div>
             </div>
 
             <div class="receita">
                 <img src="macarrao.jfif" alt="Macarrão à Carbonara" class="receita-imagem">
-                <h3>Receita 2: Macarrão à Carbonara</h3><br>
-                <p>Receita tradicional italiana de macarrão à carbonara, com um molho cremoso e delicioso.</p>
+                <div class="receita-conteudo">
+                    <h3>Macarrão à Carbonara</h3>
+                    <p>Receita tradicional italiana de macarrão à carbonara, com um molho cremoso e delicioso.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="adicionar" class="section">
+    <section id="contato" class="section">
         <div class="container">
-            <h2>Adicionar Nova Receita</h2>
-            <form action="#" method="POST">
-                <label for="nome">Nome da Receita:</label>
-                <input type="text" id="nome" name="nome" required>
+            <h2>Fale Comigo</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
 
-                <label for="ingredientes">Ingredientes:</label>
-                <textarea id="ingredientes" name="ingredientes" rows="4" required></textarea>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
 
-                <label for="modo-preparo">Modo de Preparo:</label>
-                <textarea id="modo-preparo" name="modo-preparo" rows="4" required></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
 
-                <button type="submit">Adicionar Receita</button>
+                <button type="submit">Enviar Mensagem</button>
             </form>
         </div>
     </section>
 
+    
     <footer>
         <div class="container">
             <p>&copy; 2025 Receitas Deliciosas. Todos os direitos reservados.</p>
