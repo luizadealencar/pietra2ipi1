@@ -1,3 +1,4 @@
+/* Estilos base */
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +24,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -33,6 +35,8 @@ header h1 {
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
 }
 
 nav ul li {
@@ -142,9 +146,58 @@ form button:hover {
   background-color: #a06e4b;
 }
 
-/* Suavidade ao rolar a página */
 html {
   scroll-behavior: smooth;
 }
 
+/* ======= RESPONSIVO PARA CELULAR ======= */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .receita {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .receita-imagem {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .receita-conteudo h3 {
+    font-size: 1.4rem;
+  }
+
+  .receita-conteudo p {
+    font-size: 1rem;
+  }
+}
